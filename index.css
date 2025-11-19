@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    padding: 15px 30px;
+    background-color: #F28B00;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    
+}
+
+.logo-img{
+    width: 120px;
+    border-radius: 30px;
+}
+nav{
+    display: flex;
+    column-gap: 40px;
+}
+a{
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+    text-decoration: none;
+    &:hover {
+        color: black;
+    }
+}
+.homepage{
+    display: flex;
+    background-color: #eee;
+    width: 100%;
+}
+.main-1{
+    display: flex;
+    max-width: 75%;
+    column-gap: 25%;
+}
+.main{
+    width: 30%;
+    margin-inline: 0;
+}
+.lap-1{
+    margin-top: 100px;
+    width: 400px;
+}
+.bonus{
+    margin-top: 15%;
+    width: 45%;
+}
+.bonus, h1{
+    font-size: 45px;
+    color: #484848;
+    line-height: 70px;
+    margin-top: 20px;
+    max-width: 80%;
+}
+.bonus, h3{
+    color: #484848;
+    font-size: 20px;
+}
+.shop{
+    background-color: #F28B00;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid #F28B00;
+    padding-inline: 30px;
+    font-size: 20px;
+    padding-block: 10px;
+
+}
+.home-img{
+    background-image: url(woman.jpg);
+    background-position: center;
+    height: 600px;
+    width:25% ;
+    background-size: cover;
+    background-color: #919191;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+}
+.save{
+    background-color: #F28B00;
+    color: white;
+    font-size: 15px;
+    width: fit-content;
+    padding-inline: 10px;
+    padding-block: 5px;
+    border-radius: 10px;
+    border: 1px solid #F28B00;
+}
+.special{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.apple{
+    text-align: center;
+}
+.over-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 350px;
+}
+.our-services{
+    display: flex;
+    background-color: #eee;
+    column-gap: 2px;
+    padding-bottom: 50px;
+}
+.service-1{
+    background-color: white;
+    width: 16.533%;
+    padding: 20px;
+    height: 8rem;
+}
+.service-text{
+    max-width: 80%;
+    color: #919191;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.ipad{
+    color: white;
+    font-size: 20px;
+}
+.sec-3{
+    display: flex;
+    background-color: #eee;
+    padding-bottom: 100px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.camera{
+    display: flex;
+    width: 42%;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: white;
+    padding-inline: 20px;
+    align-items: center;
+    height: fit-content;
+    p{
+        max-width: 60%;
+        line-height: 40px;
+        span:nth-child(1){
+            font-size: 18px;
+        }
+        span:nth-child(2){
+            font-size: 28px;
+            font-weight: 700;
+            color: #F28B00;
+        }
+        span:nth-child(3){
+            font-size: 50px;
+            font-weight: 700;
+            color: #cc6600;
+        }
+    }
+}
+.watch{
+    display: flex;
+    width: 42%;
+    padding-inline: 20px;
+    background-color: white;
+    justify-content: space-around;
+    border-radius: 10px;
+    align-items: center;
+    height: fit-content;
+    p{
+        max-width: 60%;
+        line-height: 40px;
+        span:nth-child(1){
+            font-size: 18px;
+        }
+        span:nth-child(2){
+            font-size: 28px;
+            font-weight: 700;
+            color: #F28B00;
+        }
+        span:nth-child(3){
+            font-size: 50px;
+            font-weight: 700;
+            color:#cc6600;
+        }
+    }
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #F28B00;
+    padding-block: 50px;
+}
+.footer-menus-1{
+    display: flex;
+    column-gap: 20px;
+    padding-bottom: 300px;
+    color: #FFFFFF;
+    padding-block: 50px;
+    justify-content: space-around;
+    padding-inline: 50px;
+}
+.footer-icon{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 25%;
+    p:nth-child(1){
+    background-color: #484848;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    align-content: center;
+    text-align: center;
+}
+    p:nth-child(2){
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    p:nth-child(3){
+        max-width: 920%;
+        font-size: 15px;
+        color: #484848;
+    }
+}
+
+input{
+    display: none;
+}
+#check:checked ~ nav{
+    display: block;
+}
+.icon{
+    display: none;
+}
+@media (max-width:767px) {
+    nav{
+        display: none;
+        background-color: orange;
+        gap: 20px;
+        flex-direction: column ;
+        position: absolute;
+        height: 200rem;
+        width: 90%;
+        z-index: 999;
+        top:50px;
+        left: 0;
+        padding-left: 30px;
+        padding-top: 20px;
+        a{
+            font-size: 25px;
+        }
+        p{
+            padding-bottom: 50px;
+        }
+    }
+    #check:checked ~ nav{
+    display: block;
+}
+    .lap-1{
+       width: 400px;  
+    }
+    .icon{
+        display: block;
+    }
+    main{
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-inline: auto;
+
+    }
+    .bonus{
+        justify-content: center;
+        width: 100%;
+    }
+    .homepage{
+        width: 100%;
+        flex-direction: column; 
+        display: flex;
+
+    }
+    .home-img{
+        width: 100%;
+        margin-top: 20px;
+    }
+    header{
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+        padding: 10px 20px;
+    }
+    h3{
+        text-align: center;
+    }
+    .bonus, h1{
+        font-size: 45px;
+        text-align: left;
+        max-width: 100%;
+    }
+    .our-services{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        column-gap: 0.5%;
+    }
+    .service-1{
+        width: 49.5%;
+        h4{
+            font-size: 22px;
+        }
+    }
+    .service-text{
+        font-size: 23px;
+    }
+    .sec-3{
+        max-width: 100%;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .camera{
+        width: 80%;
+        height: fit-content;
+        padding: 10px;
+    }
+    .watch{
+        width: 80%;
+        height: fit-content;
+        padding: 10px;
+    }
+    .footer-menus-1{
+        flex-direction: column;
+        row-gap: 20px;
+        text
+    }
+    .footer-icon{
+        width: 100%;
+        p:nth-child(2){
+            font-weight: 700;
+            font-size: 30px;
+        }
+    }
+     .pro-text{
+        max-width: 100%;
+        font-size: 25px !important;
+     }
+}
