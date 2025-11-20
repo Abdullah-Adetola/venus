@@ -97,6 +97,7 @@ input{
 }
 .our-services{
     display: flex;
+    padding-top: 3rem;
     background-color: #eee;
     column-gap: 2px;
     padding-bottom: 7rem;
@@ -131,14 +132,13 @@ input{
     align-items: center;
     height: fit-content;
     p{
-        max-width: 60%;
         line-height: 40px;
         span:nth-child(1){
-            font-size: 18px;
+            font-size: 14px;
         }
         span:nth-child(2){
-            font-size: 28px;
-            font-weight: 700;
+            font-size: 25px;
+            font-weight: 800;
             color: #F28B00;
         }
         span:nth-child(3){
@@ -158,10 +158,9 @@ input{
     align-items: center;
     height: fit-content;
     p{
-        max-width: 60%;
         line-height: 40px;
         span:nth-child(1){
-            font-size: 18px;
+            font-size: 14px;
         }
         span:nth-child(2){
             font-size: 28px;
@@ -191,7 +190,7 @@ input{
 ol{
     list-style-type: disc; 
     color: #919191; 
-    font-size: 15px;
+    font-size: 18px;
 }
 .product-1{
     background-image:  linear-gradient(
@@ -282,6 +281,7 @@ ol{
  }
  .pro-class-2{
     margin-bottom: 100px;
+    background-color: #919191;
  }
  .pro-head{
     background-color: #F28B00;
@@ -293,18 +293,43 @@ ol{
     }
  }
  .products-2{
-    background-color: #DDDD;
+    background-color: #FFFFFF;
     display: flex;
+    column-gap: 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+ }
+ .phone-div{
+    width: 20%;
+ }
+ .Phone-img{
+    width: 90%;
+    align-self: center;
+    height: 18rem;
+    border-radius: 10px;
+    margin-top: 20px;
  }
 @media (max-width:767px) {
     nav{
         display: none;
         background-color: orange;
-        gap: 50px;
-        flex-direction: column;
+        gap: 20px;
+        flex-direction: column ;
         position: absolute;
-        right: 70px;
-        top:50px
+        height: 200rem;
+        width: 90%;
+        z-index: 999;
+        top:75px;
+        left: 0;
+        padding-left: 30px;
+        padding-top: 20px;
+        a{
+            font-size: 25px;
+        }
+        p{
+            padding-bottom: 50px;
+        }
     }
     .lap-1{
        max-width: 100%;  
@@ -320,7 +345,6 @@ ol{
     }
     .sec-1{
         width: 100%;
-        padding-inline: 5%;
     div :nth-child(1){
         font-size: 35px;
         font-weight: 800;
@@ -332,24 +356,30 @@ ol{
         max-width: 90%;
     }
     div :nth-child(3){
-        width:30% ; 
+        width:50% ; 
         font-size: 30px; 
     }
     }
     .our-services{
         display: flex;
         width: 100%;
-        flex-wrap: wrap;
-        column-gap: 0.5%;
+        flex-direction: column;
+        row-gap: 20px;
     }
     .service-1{
-        width: 49.5%;
+        width: 70%;
+        height: 35%;
+        align-self: center;
+        border-radius: 20px;
         h4{
             font-size: 22px;
+            text-align: center;
         }
     }
     .service-text{
         font-size: 23px;
+        max-width: 80%;
+        margin-left: 30px;
     }
     .sec-3{
         max-width: 100%;
@@ -357,12 +387,12 @@ ol{
         row-gap: 30px;
     }
     .camera{
-        width: 80%;
+        width: 90%;
         height: fit-content;
         padding: 10px;
     }
     .watch{
-        width: 80%;
+        width: 90%;
         height: fit-content;
         padding: 10px;
     }
@@ -414,16 +444,32 @@ ol{
         flex-wrap: wrap;
 
     }
+    #airpods{
+        width: 70%;
+        height: 40%;
+    }
     .airpods{
         width: 45%;
         p:nth-child(2){
-            font-size: 20px;
+            font-size: 15px;
         }
         p:nth-child(3){
-            font-size: 25px;
+            font-size: 20px;
         }
         p:nth-child(4){
-            font-size: 25px;
+            font-size: 20px;
         }
+    }
+    .phone-div{
+        width: 45%;
+    }
+    .Phone-img{
+        width: 95%;
+        height: 12rem;
+        margin-top: 20px;
+    }
+    .products-2{
+        justify-content: center;
+        text-align: center;
     }
 }
