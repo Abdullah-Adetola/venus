@@ -130,7 +130,6 @@ a{
     font-size: 13px;
     margin-top: 10px;
 }
-
 .ipad{
     color: white;
     font-size: 20px;
@@ -153,6 +152,7 @@ a{
     align-items: center;
     height: fit-content;
     p{
+        max-width: 100%;
         line-height: 40px;
         span:nth-child(1){
             font-size: 14px;
@@ -196,48 +196,68 @@ a{
         }
     }
 }
-.footer{
+footer{
     display: flex;
     flex-direction: column;
-    background-color: #F28B00;
-    padding-block: 50px;
+    padding-bottom: 100px;
+    background-color: #16141491;
+    p{
+        font-size: 20px;
+    }
 }
 .footer-menus-1{
     display: flex;
-    column-gap: 20px;
-    padding-bottom: 300px;
+    width: 100%;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    padding-bottom: 30px;
+    justify-content: center;
     color: #FFFFFF;
-    background-color: #2C2C2C;
-    padding-block: 50px;
-    justify-content: space-around;
-    padding-inline: 50px;
 }
-.footer-icon{
+.footer-about{
+    max-width: 75% !important;
+    line-height: 30px;
+}
+.footer-row-1{
     display: flex;
+    padding-block: 20px;
     flex-direction: column;
     row-gap: 10px;
-    width: 25%;
-    p:nth-child(1){
-    background-color: #white;
-    width: 60px;
-    height: 60px;
-    border-radius: 50px;
-    align-content: center;
-    text-align: center;
-}
+    width: 24%;
     p:nth-child(2){
-        color: #484848;
+        color: #ffffff;
         font-size: 20px;
+        max-width: 100%;
         font-weight: 500;
     }
-    p:nth-child(3){
-        max-width: 920%;
+}
+.foot-menus{
+        p{  color: #ffffff;
+            cursor: pointer;
+            line-height: 40px;
+            &:hover{
+                color: #F28B00;
+            }
+        }
+}
+.nav-apps{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.fa-brands{
+    font-size: 30px;
+}
+.copy{
+    text-align: center;
+    padding-top: 30px;
+    p{
         font-size: 15px;
-        color: white;
+        color: #FFFFFF;
     }
 }
 .pro-class-2{
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     background-color: #919191;
  }
  .pro-head{
@@ -286,7 +306,7 @@ input{
         height: 200rem;
         width: 90%;
         z-index: 999;
-        top:75px;
+        top:55.2px;
         left: 0;
         padding-left: 30px;
         padding-top: 20px;
@@ -301,7 +321,8 @@ input{
     display: block;
 }
     .lap-1{
-       width: 80%;  
+       width: 15rem; 
+       border-radius: 10px; 
     }
     .icon{
         display: block;
@@ -344,7 +365,9 @@ input{
     }
     .bonus, h1{
         font-size: 30px;
-        text-align: center;
+        text-align: center; 
+        line-height: 35px;
+        padding-bottom: 20px;
         align-content: center;
         align-self: center; 
     }
@@ -388,14 +411,29 @@ input{
     .footer-menus-1{
         flex-direction: column;
         row-gap: 20px;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 50px;
+        margin: 0;
     }
-    .footer-icon{
+    .footer-row-1{
         display: flex;
         flex-direction: column;
-        width: 100%;
-        p:nth-child(2){
-            font-weight: 600;
-            font-size: 25px;
+        width: 95%;
+        padding: 0;
+        padding-left: 5%;
+        h3{
+            font-size: 20px;
+            text-align: left;
+        }
+    }
+    .footer-about{
+        max-width: 100%;
+        line-height: 30px;
+    }
+    .pro-head{
+        p{
+            font-size: 12px;
         }
     }
      .pro-text{
