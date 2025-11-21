@@ -44,15 +44,13 @@ a{
 .main-1{
     display: flex;
     max-width: 75%;
-    column-gap: 25%;
-}
-.main{
-    width: 30%;
-    margin-inline: 0;
+    column-gap: 10%;
 }
 .lap-1{
     margin-top: 100px;
-    width: 400px;
+    width: 500px;
+    margin-left: 30px;
+    border-radius: 20px;
 }
 .bonus{
     margin-top: 15%;
@@ -246,6 +244,11 @@ footer{
     justify-content: space-evenly;
 }
 .fa-brands{
+    font-size: 50px;
+    color: #eee;
+}
+.fa-solid{
+    color: #eee;
     font-size: 30px;
 }
 .copy{
@@ -452,5 +455,13 @@ input{
         justify-content: center;
         text-align: center;
     }
+    .fa-brands{
+    font-size: 30px;
+    color: #eee;
+}
+    .fa-solid{
+    color: #eee;
+    font-size: 25px;
+}
 }
 

@@ -230,7 +230,7 @@ ol{
     display: flex;
     border-color: #aaa;
     flex-direction: column;
-    background-color: #ccc;
+    background-color: #eee;
     gap: 50px;
     padding-top: 20px;
 }
@@ -280,8 +280,8 @@ ol{
     border-radius: 10px;
  }
  .pro-class-2{
-    padding-bottom: 100px;
-    background-color: #ccc;
+    padding-bottom: 60px;
+    background-color: #eee;
  }
  .pro-head{
     background-color: #F28B00;
@@ -293,8 +293,8 @@ ol{
     }
  }
  .products-2{
-    background-color: #FFFFFF;
     display: flex;
+    padding-top: 50px;
     column-gap: 5%;
     flex-wrap: wrap;
     justify-content: center;
@@ -311,8 +311,8 @@ ol{
     margin-top: 20px;
  }
  .pro-class-3{
-    padding-bottom: 100px;
-    background-color: #ccc;
+    background-color: #eee;
+    padding-bottom: 60px;
  }
  .pro-head-2{
     background-color: #F28B00;
@@ -324,8 +324,8 @@ ol{
     }
  }
  .products-3{
-    background-color: #FFFFFF;
     display: flex;
+    padding-top: 50px;
     column-gap: 5%;
     flex-wrap: wrap;
     justify-content: center;
@@ -394,6 +394,11 @@ ol{
     justify-content: space-evenly;
 }
 .fa-brands{
+    font-size: 50px;
+    color: #eee;
+}
+.fa-solid{
+    color: #eee;
     font-size: 30px;
 }
 .copy{
@@ -555,6 +560,7 @@ ol{
     }
     .airpods{
         width: 45%;
+        padding-bottom: 0;
         p:nth-child(2){
             font-size: 12px;
         }
@@ -582,12 +588,10 @@ ol{
     .products-2{
         justify-content: center;
         text-align: center;
-        background-color: #ccc;
     }
     .products-3{
         justify-content: center;
         text-align: center;
-        background-color: #ccc;
     }
     .pro-head-2{
         width: 100%;
@@ -626,4 +630,12 @@ ol{
         max-width: 100%;
         line-height: 30px;
     }
+    .fa-brands{
+    font-size: 30px;
+    color: #eee;
+}
+    .fa-solid{
+    color: #eee;
+    font-size: 25px;
+}
 }
